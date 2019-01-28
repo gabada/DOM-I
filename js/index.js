@@ -65,6 +65,7 @@ navLinks.forEach(link => link.style.color = "green");
 // CTA
 const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = siteContent["cta"].h1;
+ctaHeader.style.color="magenta";
 
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent["cta"].button;
@@ -77,6 +78,7 @@ ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 // Top Content
 const featureHeader = document.querySelector("div h4");
 featureHeader.textContent = siteContent["main-content"]["features-h4"];
+featureHeader.style.backgroundColor = "grey";
 
 const featureContent = document.querySelector("div p");
 featureContent.textContent = siteContent["main-content"]["features-content"];
@@ -94,6 +96,8 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 // Bottom Content
 const servicesHeader = document.querySelectorAll("div h4");
 servicesHeader[2].textContent = siteContent["main-content"]["services-h4"];
+servicesHeader[2].style.backgroundColor = "orange";
+
 
 const servicesContent = document.querySelectorAll("div p");
 servicesContent[2].textContent = siteContent["main-content"]["services-content"];
@@ -107,8 +111,10 @@ productContent[3].textContent = siteContent["main-content"]["product-content"];
 const visionHeader = document.querySelectorAll("div h4");
 visionHeader[4].textContent = siteContent["main-content"]["vision-h4"];
 
+
 const visionContent = document.querySelectorAll("div p");
 visionContent[4].textContent = siteContent["main-content"]["vision-content"];
+
 
 // Contact
 const contactHeader = document.querySelector(".contact h4");
