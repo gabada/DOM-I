@@ -50,6 +50,17 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
+const whyUs = document.createElement("a");
+const navBar1 = document.querySelector('nav');
+whyUs.textContent = "Why us? ";
+navBar1.prepend(whyUs);
+whyUs.style.color = 'green';
+
+const callUs = document.createElement("a");
+callUs.textContent = " Call us now!"
+navBar1.appendChild(callUs);
+callUs.style.color = 'green';
+
 navLinks.forEach(link => link.style.color = "green");
 // CTA
 const ctaHeader = document.querySelector("h1");
