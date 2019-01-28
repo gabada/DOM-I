@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+// NAV Links
 const navLinks = document.querySelectorAll("a");
 navLinks[0].textContent = siteContent['nav']['nav-item-1'];
 navLinks[1].textContent = siteContent['nav']['nav-item-2'];
