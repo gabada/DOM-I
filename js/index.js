@@ -74,3 +74,7 @@ aboutHeader[1].textContent = siteContent["main-content"]["about-h4"];
 
 const aboutContent = document.querySelectorAll("div p");
 aboutContent[1].textContent = siteContent["main-content"]["about-content"];
+
+// Middle Img
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
