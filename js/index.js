@@ -78,3 +78,22 @@ aboutContent[1].textContent = siteContent["main-content"]["about-content"];
 // Middle Img
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+// Bottom Content
+const servicesHeader = document.querySelectorAll("div h4");
+servicesHeader[2].textContent = siteContent["main-content"]["services-h4"];
+
+const servicesContent = document.querySelectorAll("div p");
+servicesContent[2].textContent = siteContent["main-content"]["services-content"];
+
+const productHeader = document.querySelectorAll("div h4");
+productHeader[3].textContent = siteContent["main-content"]["product-h4"];
+
+const productContent = document.querySelectorAll("div p");
+productContent[3].textContent = siteContent["main-content"]["product-content"];
+
+const visionHeader = document.querySelectorAll("div h4");
+visionHeader[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const visionContent = document.querySelectorAll("div p");
+visionContent[4].textContent = siteContent["main-content"]["vision-content"];
