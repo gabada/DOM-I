@@ -70,6 +70,21 @@ ctaHeader.style.color="magenta";
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent["cta"].button;
 
+// Event Handler on click
+ctaBtn.addEventListener('click', event => {
+  ctaBtn.style.backgroundColor = "red";
+  ctaBtn.animate([
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(+600px)' }
+  ], {
+        duration: 1200,
+        iterations: 3
+      });
+  navLinks.forEach(link => link.style.color = "magenta");
+  whyUs.style.color = 'magenta';
+  callUs.style.color = 'magenta';
+})
+
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
