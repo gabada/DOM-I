@@ -65,6 +65,7 @@ navLinks.forEach(link => link.style.color = "green");
 // CTA
 const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = siteContent["cta"].h1;
+ctaHeader.innerHTML = ctaHeader.textContent.split(' ').join("<br />");
 
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent["cta"].button;
@@ -116,6 +117,7 @@ contactHeader.textContent = siteContent["contact"]["contact-h4"];
 
 const contactInfo = document.querySelectorAll(".contact p");
 contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[0].innerHTML = contactInfo[0].textContent.split('Somewhere').join("<br /> Somewhere");
 contactInfo[1].textContent = siteContent["contact"]["phone"];
 contactInfo[2].textContent = siteContent["contact"]["email"];
 
