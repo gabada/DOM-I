@@ -66,7 +66,11 @@ navLinks.forEach(link => link.style.color = "green");
 const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = siteContent["cta"].h1;
 ctaHeader.innerHTML = ctaHeader.textContent.split(' ').join("<br />");
+
+//stretch
 ctaHeader.style.color="magenta";
+
+//master
 
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent["cta"].button;
