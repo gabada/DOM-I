@@ -67,8 +67,28 @@ const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = siteContent["cta"].h1;
 ctaHeader.innerHTML = ctaHeader.textContent.split(' ').join("<br />");
 
+//stretch
+ctaHeader.style.color="magenta";
+
+//master
+
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent["cta"].button;
+
+// Event Handler on click
+ctaBtn.addEventListener('click', event => {
+  ctaBtn.style.backgroundColor = "red";
+  ctaBtn.animate([
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(+600px)' }
+  ], {
+        duration: 1200,
+        iterations: 3
+      });
+  navLinks.forEach(link => link.style.color = "magenta");
+  whyUs.style.color = 'magenta';
+  callUs.style.color = 'magenta';
+})
 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
@@ -78,6 +98,7 @@ ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 // Top Content
 const featureHeader = document.querySelector("div h4");
 featureHeader.textContent = siteContent["main-content"]["features-h4"];
+featureHeader.style.backgroundColor = "grey";
 
 const featureContent = document.querySelector("div p");
 featureContent.textContent = siteContent["main-content"]["features-content"];
@@ -95,6 +116,8 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 // Bottom Content
 const servicesHeader = document.querySelectorAll("div h4");
 servicesHeader[2].textContent = siteContent["main-content"]["services-h4"];
+servicesHeader[2].style.backgroundColor = "orange";
+
 
 const servicesContent = document.querySelectorAll("div p");
 servicesContent[2].textContent = siteContent["main-content"]["services-content"];
@@ -108,8 +131,10 @@ productContent[3].textContent = siteContent["main-content"]["product-content"];
 const visionHeader = document.querySelectorAll("div h4");
 visionHeader[4].textContent = siteContent["main-content"]["vision-h4"];
 
+
 const visionContent = document.querySelectorAll("div p");
 visionContent[4].textContent = siteContent["main-content"]["vision-content"];
+
 
 // Contact
 const contactHeader = document.querySelector(".contact h4");
